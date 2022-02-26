@@ -27,7 +27,7 @@ d3.json("https://d3js.org/us-10m.v1.json", function(error, us) {
       .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; })));
 });
 
-addNames();
+//addNames();
 
 var locked = false;
 function countClick(){
