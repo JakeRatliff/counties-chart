@@ -50,6 +50,7 @@ function highlightFip(fip){
   });
   document.getElementById(fip).style.fill = "green";
   var fips = data.find( ({ county }) => county === fip );
+  console.log(fips);
   for(let i = 0; i<fips.neighbors.length; i++){
     let county = document.getElementById(fips.neighbors[i]);
     county.classList.add("highlight");
